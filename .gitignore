@@ -1,0 +1,7 @@
+1_terraform_gcp/.terraform
+1_terraform_gcp/.terraform-version
+1_terraform_gcp/terraform.tfstate
+1_terraform_gcp/.terraform.lock.hcl
+
+
+
