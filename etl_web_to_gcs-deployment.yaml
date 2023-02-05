@@ -3,13 +3,22 @@
 ###
 name: etl_github
 description: The main ETL function
-version: 92e595c717520eaf23fd3a0a85e9eebd
+version: f0f2188a3b919704de0f1ad614cef261
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 tags: []
-parameters: {"months":[4], "year":2019}
+parameters:
+  year: 2019
+  months:
+  - 4
 schedule: null
 infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: etl-web-to-gcs
+manifest_path: null
 infrastructure:
   type: process
   env: {}
@@ -18,14 +27,11 @@ infrastructure:
   command: null
   stream_output: true
   working_dir: null
+  _block_document_id: 7b403a5e-bb57-4b0f-be08-769d59f1412c
+  _block_document_name: anonymous-a13d843a-1966-4c3c-82f6-0856c4f52858
+  _is_anonymous: true
   block_type_slug: process
   _block_type_slug: process
-
-###
-### DO NOT EDIT BELOW THIS LINE
-###
-flow_name: etl-web-to-gcs
-manifest_path: null
 storage:
   repository: https://github.com/cenzy/data-engineering-zoomcamp
   reference: null
