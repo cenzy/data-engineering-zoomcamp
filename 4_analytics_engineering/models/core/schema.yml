@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: dim_zones
+  - name: fact_trips
+  - name: dm_monthly_zone_revenue
